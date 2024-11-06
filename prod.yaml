@@ -1,0 +1,9 @@
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: prod
+  annotations: {}
+  labels: {}
+description: prod
+gke:
+  cluster: projects/adept-script-434704-n3/locations/us-central1-c/clusters/prod-cluster
