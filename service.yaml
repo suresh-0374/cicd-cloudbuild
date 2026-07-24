@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: my-python-service
+spec:
+  template:
+    spec:
+      containers:
+      - image: my-python-app-image # Leave this name as is; Cloud Deploy replaces it
