@@ -1,0 +1,9 @@
+apiVersion: skaffold/v4
+kind: Config
+metadata:
+  name: my-app
+manifests:
+  rawYaml:
+    - cloudrun.yaml # This is a temporary file Cloud Deploy will use
+deploy:
+  cloudRun: {}
