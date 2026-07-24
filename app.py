@@ -7,7 +7,7 @@ app = Flask(__name__)
 def hello_world():
     return jsonify({
         "status": "success",
-        "message": "GCP Cloud Build Triggered Successfully! done",
+        "message": "GCP Cloud Build Triggered Successfully!",
         "framework": "Flask",
         "language": "Python 3.11"
     })
