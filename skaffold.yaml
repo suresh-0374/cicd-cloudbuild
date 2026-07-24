@@ -1,13 +1,9 @@
-apiVersion: skaffold/v4beta9
+apiVersion: skaffold/v4
 kind: Config
-build:
-  tagPolicy:
-    gitCommit: {}
-  local: {}
+metadata:
+  name: my-app
 manifests:
   rawYaml:
-    - ./kubernetes/*
+    - cloudrun.yaml # This is a temporary file Cloud Deploy will use
 deploy:
-  kubectl: {}
-  logs:
-    prefix: container
+  cloudRun: {}
