@@ -1,9 +1,9 @@
-apiVersion: skaffold/v4
+apiVersion: skaffold/v3
 kind: Config
 metadata:
   name: my-app
 manifests:
   rawYaml:
-    - cloudrun.yaml # This is a temporary file Cloud Deploy will use
+    - cloudrun.yaml # This MUST match the actual filename in your repo
 deploy:
-  cloudRun: {}
+  cloudrun: {}    # Changed from cloudRun to cloudrun (lowercase 'r')
